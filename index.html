@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel=stylesheet type="text/css" href= "assets/css/styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<title></title>
+</head>
+<body>
+ <video autoplay loop muted  id="background">   
+        <source src="http://ui.specbee.com/sample/bird.mp4" type="video/mp4">
+ </video>
+
+
+<div class="container">
+	<div class="card-panel teal lighten-2 col s12">
+		<h1 class="center-align"> Train Time Table</h1>
+	</div>
+	<div class="col s12 card" id="currentTrains">	
+				<h5 class="card teal lighten-2"> Train Times</h5>
+			<table id="trainTimeTable" class="striped responsive-table">
+			 <tr>
+   				<th>Train Name</th>
+   				<th>Destination</th>
+   				<th>Frequency</th>
+   				<th> Minutes Left </th>
+				<th> Next Train Time </th>
+ 			 </tr>
+			</table>
+	</div>
+	<div class="col s12 card" id="addTrainTime">
+				<h5 class="card teal lighten-2"> Add Train Time</h5>
+				 <form role="form">
+                     <div class="form-group">
+                       <label for="search">Train Name</label>
+                       <input type="text" class="form-control" id="trainName">
+                     </div>
+                    <div>
+                       <label for="role">Destination</label>
+                       <input type="text" class="form-control" id="destination">
+                     </div>
+
+                     <div class="form-group">
+                       <label for="startYear">First Train Time</label>
+                       <input type="time" class="form-control" id="firstTrainTime">
+                     </div>
+
+                     <div class="form-group">
+                       <label for="monthlyRate">Frequency</label>
+                       <input type="number" class="form-control" id="frequency">
+                     </div>
+					<div>
+                     	<button class="btn waves-effect waves-light" id="submit">
+						 <i class="material-icons right"></i> Submit</button>
+					</div>    
+				</form>
+			</div>
+</div>
+
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="assets/js/jquery-3.1.0.min.js"></script>
+<script src="assets/js/app.js"></script>
+</html>
