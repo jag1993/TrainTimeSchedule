@@ -9,5 +9,4 @@
   > 1. HTML
   > 2. CSS
   > 3. JavaScript and jQuery
-  > 4. AJAX
-  > 5. Firebase
+  > 4. Firebase
